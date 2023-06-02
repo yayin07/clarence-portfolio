@@ -13,7 +13,7 @@ const ExperienceCard = () => {
   return (
     <div>
       <div
-        className="w-full m-auto max-w-[1200px] bg-[#0a192f] px-12 py-20 md:px-28 lg:px-96"
+        className="w-full m-auto max-w-[1200px] bg-[#0a192f] px-12 py-20 md:px-28 lg:px-64 "
         id="experience"
       >
         <div className="flex flex-row space-x-2 ">

@@ -12,12 +12,12 @@ const Sidebar = () => {
     <div className="hidden xl:flex w-28 text-[#ccd6f6]   bg-[#0a192f]  ">
       <div className=" fixed justify-end pl-0 md:pl-8 flex flex-col justify-items-start h-full">
         <div className="text-2xl vertical">
-          <div className="space-y-6 hover:text-[#64ffda]">
+          <div className="space-y-6 text-sm hover:text-[#64ffda]">
             clarencecabiles07@gmail.com
           </div>
         </div>
 
-        <div className="h-48  mt-8 ml-3 border-l border-[#ccd6f6]"></div>
+        <div className="h-48  mt-8 ml-2 border-l border-[#ccd6f6]"></div>
       </div>
     </div>
   );
