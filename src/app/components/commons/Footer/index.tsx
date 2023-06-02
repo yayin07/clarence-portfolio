@@ -34,7 +34,7 @@ const Footer = () => {
       <div className=" hover:text-[#64ffda]">
         <div className="  pb-2 flex justify-center  ">
           <div>
-            <p>reference Brittany Chiang / Cloned by Clarence Cabiles</p>
+            <p>Reference: Brittany Chiang / Cloned by: Clarence Cabiles</p>
           </div>
         </div>
         <div className="flex justify-center space-x-4 pb-6">

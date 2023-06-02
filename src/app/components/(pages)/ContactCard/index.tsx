@@ -32,13 +32,15 @@ const ContactCard = () => {
             </div>
           </div>
         </div>
-        <div className="pt-48  pb-4 space-y-3 hidden lg:flex justify-center  ">
+        <div className="pt-48  pb-4 space-y-3 hidden lg:flex justify-center text-lg  ">
           <div>
-            <p>Designed by Brittany Chiang / Clone by Clarence Cabiles</p>
+            <p>Reference: Brittany Chiang / Cloned by: Clarence Cabiles</p>
           </div>
         </div>
         <div>
-          <p className="pb-4 hidden lg:flex justify-center">5,826 2,746</p>
+          <p className="pb-4 hidden lg:flex justify-center text-sm">
+            5,826 2,746
+          </p>
         </div>
       </div>
     </div>
