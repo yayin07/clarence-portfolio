@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "./components/commons/Header";
-import Footer from "./components/commons/Footer";
+
 import SidebarLeft from "./components/commons/SidebarLeft";
 import SidebarRight from "./components/commons/SidebarRight";
 
@@ -26,7 +26,6 @@ export default function RootLayout({
           <div className="flex-1">{children}</div>
           <SidebarRight />
         </div>
-        <Footer />
       </body>
     </html>
   );

@@ -12,15 +12,18 @@ const ExperienceCard = () => {
 
   return (
     <div>
-      <div className="w-full bg-[#0a192f] px-12 py-20 md:px-96" id="experience">
+      <div
+        className="w-full m-auto max-w-[1200px] bg-[#0a192f] px-12 py-20 md:px-28 lg:px-96"
+        id="experience"
+      >
         <div className="flex flex-row space-x-2 ">
           <div className="text-sm md:text-xl pt-1.5 md:pt-1 text-[#64ffda]">
             02.
           </div>
-          <div className="text-lg md:text-2xl font-bold text-[#ccd6f6] w-44 md:w-56">
+          <div className="text-lg md:text-2xl font-bold text-[#ccd6f6] w-44 md:w-72 ">
             Where I’ve Worked
           </div>
-          <div className="border-t border-[#233554] w-40 md:w-60 mt-4"></div>
+          <div className="border-t border-[#233554] w-40 md:w-52  mt-4"></div>
         </div>
 
         <div className="flex flex-col md:flex-row py-12 ">

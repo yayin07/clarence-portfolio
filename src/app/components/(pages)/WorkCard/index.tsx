@@ -9,7 +9,10 @@ import { RiShareBoxLine } from "react-icons/ri";
 const WorkCard = () => {
   return (
     <div>
-      <div className="bg-[#0a192f] pl-64 pr-64 pb-48 pt-28 " id="work">
+      <div
+        className="bg-[#0a192f] m-auto max-w-[1200px] pl-64 pr-64 pb-48 pt-28  "
+        id="work"
+      >
         <div className="flex flex-row space-x-2 ">
           <div className="text-sm md:text-xl pt-1.5 md:pt-1 text-[#64ffda]">
             02.

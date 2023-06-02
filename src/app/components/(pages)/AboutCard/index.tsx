@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { FaCaretRight } from "react-icons/fa";
-import DP from "../../../../../public/rere.jpg";
+import DP from "../../../../../public/yayin.jpg";
 
 const AboutCard = () => {
   return (
     <div>
-      <div className="bg-[#0a192f] py-20" id="about">
-        <div className="flex flex-row space-x-2 w-full px-12 md:px-60">
+      <div className="bg-[#0a192f] py-20 m-auto max-w-[1200px] " id="about">
+        <div className="flex flex-row space-x-2 w-full px-12 md:px-20  lg:px-52">
           <div className="text-sm md:text-xl pt-1.5 md:pt-1 text-[#64ffda]">
             01.
           </div>
@@ -17,12 +17,12 @@ const AboutCard = () => {
           <div className="border-t border-[#233554] w-60 mt-4"></div>
         </div>
 
-        <div className="px-12 py-12 md:px-60 flex flex-col md:flex-row gap-6 ">
+        <div className="px-12 py-12 md:px-20 lg:px-52 flex flex-col lg:flex-row  gap-6 ">
           <div className="w-full text-md text-[#a8b2d1]">
             <div>
               <p>
-                I’m a software engineer specializing in building (and
-                occasionally
+                I’m Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                dov (and occasionally
               </p>
               <p>
                 designing) exceptional digital experiences. Currently, I’m
@@ -34,12 +34,11 @@ const AboutCard = () => {
               </p>
               <br></br>
               <p>
-                I’m a software engineer specializing in building (and
-                occasionally
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               </p>
               <p>
-                designing) exceptional digital experiences. Currently, I’m
-                focused on
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,
               </p>
               <p>
                 building accessible, human-centered products at
@@ -96,20 +95,20 @@ const AboutCard = () => {
             </div>
           </div>
 
-          <div className="w-full pt-12 md:pt-0 flex justify-center md:justify-start">
+          <div className="w-full pt-12 lg:pt-0 flex justify-center lg:justify-start ">
             <div
               style={{ transition: "transform 0.3s" }}
-              className="relative h-60 w-60 md:h-72 md:w-72  rounded-md  border-[#64ffda] border-2 translate-x-2 translate-y-2 translate-all hover:translate-y-4 hover:translate-x-4 "
+              className=" h-60 w-60 md:h-72 md:w-72  rounded-md  border-[#64ffda] border-2 translate-x-2 translate-y-2 translate-all hover:translate-y-4 hover:translate-x-4 "
             >
               <div
-                className="overflow-auto rounded-md  h-60 w-60 md:h-72 md:w-72  relative -translate-x-3 -translate-y-3 hover:-translate-y-6 hover:-translate-x-6 "
+                className="overflow-hidden rounded-md  h-60 w-60 md:h-72 md:w-72  -translate-x-3 -translate-y-3 hover:-translate-y-6 hover:-translate-x-6 "
                 style={{ transition: "transform 0.3s" }}
               >
-                <div className="absolute w-full h-full bg-[#64ffda]/80 hover:bg-transparent transition-colors duration-300"></div>
+                <div className="absolute w-full h-full bg-[#64ffda]/70 hover:bg-transparent transition-colors duration-300"></div>
                 <Image
                   src={DP}
                   alt="Image"
-                  style={{ objectFit: "cover", objectPosition: "cover" }}
+                  style={{ objectFit: "cover", objectPosition: "center" }}
                 />
               </div>
             </div>

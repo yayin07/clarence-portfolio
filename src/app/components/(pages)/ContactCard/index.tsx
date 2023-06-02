@@ -3,7 +3,10 @@ import React from "react";
 const ContactCard = () => {
   return (
     <div>
-      <div className="bg-[#0a192f] text-[#ccd6f6] text-xl px-12 " id="contact">
+      <div
+        className="bg-[#0a192f] text-[#ccd6f6] text-xl px-12 m-auto max-w-[1200px]"
+        id="contact"
+      >
         <div className="text-center ">
           <h2 className="text-[#64ffda] pb-4 pt-4"> 4. What's Next?</h2>
           <div className="text-3xl font-semibold md:text-4xl md:font-extrabold  text-[#ccd6f6] py-6">
@@ -16,10 +19,17 @@ const ContactCard = () => {
           </p>
           <p>best to get back to you!</p>
 
-          <div className="p-4 pt-12 ">
-            <button className="text-[#64ffda] border-[#64ffda] border-2 p-3 px-10 rounded-md">
-              Say Hello
-            </button>
+          <div className=" md:pt-0 flex  justify-center my-16">
+            <div className="rounded-md border-[#64ffda] border-r-2 border-b-2   ">
+              <div
+                className="px-8 p-4  hover:-translate-y-1 hover:-translate-x-1 rounded-md text-[#64ffda] border
+                   border-[#64ffda] 
+                     translate-all "
+                style={{ transition: "transform 0.3s" }}
+              >
+                Say Hello
+              </div>
+            </div>
           </div>
         </div>
         <div className="pt-48  pb-4 space-y-3 hidden lg:flex justify-center  ">
