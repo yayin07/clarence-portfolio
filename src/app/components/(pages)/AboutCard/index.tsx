@@ -21,15 +21,11 @@ const AboutCard = () => {
           <div className="w-full text-md text-[#a8b2d1]">
             <div>
               <p>
-                I’m Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                dov (and occasionally
-              </p>
-              <p>
-                designing) exceptional digital experiences. Currently, I’m
-                focused on
-              </p>
-              <p>
-                building accessible, human-centered products at
+                Hello! I'm Clarence, a mid-level developer with a focus on
+                creating impactful web solutions. I excel in crafting
+                exceptional user experiences, from responsive designs to
+                seamless interactions. Let's collaborate and build engaging
+                websites together.
                 <a className="text-[#64ffda] pl-2">Upstatement</a>.
               </p>
               <br></br>
