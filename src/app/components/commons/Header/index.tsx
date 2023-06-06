@@ -21,8 +21,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className={navClassList.join(" ")}>
-        <div className="navbar flex px-12 md:py-4 justify-between items-center relative w-full  bg-[#0a192f]/10 backdrop-blur shadow-md  ">
+      <nav className={navClassList.join(" ")} style={{ zIndex: 20 }}>
+        <div className="navbar flex px-12 md:py-4 justify-between items-center  z-10  w-full  bg-[#0a192f]/10 backdrop-blur shadow-md  ">
           <div className="text-2xl py-4 md:py-0 md:text-2xl font-bold text-[#64ffda] md:flex md:justify-center items-center">
             Yayin
           </div>
