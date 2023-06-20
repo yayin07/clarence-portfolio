@@ -8,6 +8,7 @@ const Navbar = () => {
   const handleViewResume = () => {
     window.open("/Clarence-Profile.pdf", "_blank");
   };
+
   const [navClassList, setNavClassList] = useState<any>([]);
   const scroll = useScroll();
 

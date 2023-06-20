@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[#0a192f]  text-[#ccd6f6] text-sm py-12 text-center xl:hidden pt-28 w-full m-auto max-w-[1200px] px-12 md:px-28 lg:px-52">
+    <div className="bg-[#0a192f]  text-[#ccd6f6] text-sm py-12 text-center lg:hidden pt-28 w-full m-auto max-w-[1200px] px-12 md:px-28 lg:px-52">
       <div className="flex justify-center text-3xl space-x-8 py-6">
         <div className="hover:text-[#64ffda]">
           <a href="https://github.com/yayin07">

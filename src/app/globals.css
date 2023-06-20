@@ -16,6 +16,8 @@ nav {
     transform: translateY(-100%);
   }
   
+
+  /* sidebar */
   main {
     margin-top: 4em;
     height: calc(100vh - 4em);
