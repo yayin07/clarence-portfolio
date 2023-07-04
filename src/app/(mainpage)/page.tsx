@@ -64,7 +64,7 @@ const Home = () => {
         <ExperienceCard />
 
         {/*----------------------- Worked------------------ */}
-        {/* <WorkCard /> */}
+        <WorkCard />
 
         {/*----------------------- Other------------------ */}
         <OtherCard />

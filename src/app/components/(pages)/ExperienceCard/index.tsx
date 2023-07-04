@@ -56,7 +56,7 @@ const ExperienceCard = () => {
               }`}
               onClick={() => openTab("tab3")}
             >
-              Pahiram.ph
+              Lorem Ipsum
             </button>
           </div>
 

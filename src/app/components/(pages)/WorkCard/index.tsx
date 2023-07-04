@@ -1,155 +1,180 @@
 import React from "react";
 import Image from "next/image";
 import one from "../../../../../public/one.png";
-import two from "../../../../../public/two.png";
+
 import three from "../../../../../public/three.png";
+import altev from "../../../../../public/altev.png";
+import tn_phil from "../../../../../public/tn_phil.png";
+
 import { TbBrandGithub } from "react-icons/tb";
 import { RiShareBoxLine } from "react-icons/ri";
 
 const WorkCard = () => {
   return (
-    <div>
+    <>
       <div
-        className="bg-[#0a192f] m-auto max-w-[1200px] pl-64 pr-64 pb-48 pt-28  "
+        className="text-[#ccd6f6] px-12 py-28 w-full flex flex-col gap-12 m-auto max-w-[1200px] "
         id="work"
       >
-        <div className="flex flex-row space-x-2 ">
+        <div className="flex flex-row space-x-2  ">
           <div className="text-sm md:text-xl pt-1.5 md:pt-1 text-[#64ffda]">
-            02.
+            03.
           </div>
-          <div className="text-lg md:text-2xl font-bold text-[#ccd6f6] w-44 md:w-64">
+          <div className="text-xl md:text-2xl font-bold text-[#ccd6f6] w-38 md:w-72">
             Some Things I’ve Built
           </div>
-          <div className="border-t border-[#233554] w-40 md:w-60 mt-4"></div>
+          <div className="border-t border-[#233554] w-32 md:w-56 lg:w-72 mt-4"></div>
         </div>
 
-        {/* ---------IMAGE 1 ------------------------ */}
+        {/* ----cards-------- */}
+        <div className="flex flex-col gap-16">
+          <div className="relative w-full   text-white grid grid-cols-12 rounded-md   ">
+            <div className="col-span-12 md:col-span-6 md:z-0  md:translate-x-6 md:h-[20em] h-[25em] border-[#64ffda] md:border rounded-md hover:border-0  ">
+              <a
+                href="https://www.ticketnation.ph/"
+                className="absolute  rounded-md w-full h-full bg-[#64ffda]/70 md:bg-[#64ffda]/50 hover:bg-transparent transition-colors duration-300"
+              ></a>
 
-        <div className="pt-12 text-white space-y-28">
-          <div className="flex">
-            <div>
-              <Image className="w-18 h-96 rounded-md " src={one} alt="one" />
-            </div>
-            <div className=" bg-slate-800 w-[630px] absolute pt-8 pb-8 pr-8 mt-28 ml-[550px] text-right space-y-1 rounded-md">
-              <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom,</p>
-              <p>iTerm, and more. Available on Visual Studio Marketplace</p>
-              <p> Package Control, Atom Package Manager, and npm.</p>
-            </div>
-
-            <div className=" w-[630px] absolute  pt-6 ml-[550px] text-right space-y-1 rounded-md">
-              <p className="text-emerald-400">Featured Project</p>
-              <h1 className="text-3xl">Halcyon Theme</h1>
-            </div>
-
-            <div className=" w-[630px] absolute  pt-72  ml-[550px]   rounded-md text-right ">
-              <div className="flex justify-end space-x-4">
-                <p>VS Code</p>
-                <p>Sublime Text</p>
-                <p>Atom </p>
-                <p>iTerm2 </p>
-                <p> Hyper</p>
-              </div>
-
-              <div className="pt-4 flex justify-end text-2xl space-x-4">
-                <div>
-                  <TbBrandGithub />
-                </div>
-                <div>
-                  <RiShareBoxLine />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* -----------------------image 2------------------------ */}
-          <div className=" flex justify-end">
-            <div>
-              <Image className="w-18 h-96" src={two} alt="two" />
-            </div>
-            <div className=" bg-slate-800 w-[630px] mt-28 absolute mr-[550px] pt-8 pb-8 pl-8 ">
-              <p>
-                A web app for visualizing personalized Spotify data. View your
-              </p>
-              <p>
-                top artists, top tracks, recently played tracks, and detailed
-                audio
-              </p>
-              <p>
-                information about each track. Create and save new playlists of
-              </p>
-              <p>
-                recommended tracks based on your existing playlists and more.
-              </p>
-            </div>
-
-            <div className=" w-[630px] absolute mr-[550px] pt-6  ">
-              <p className="text-emerald-400">Featured Project</p>
-              <h1 className="text-3xl"> Spotify Profile</h1>
-            </div>
-
-            <div className=" w-[630px]  absolute mr-[550px] pt-72 ">
-              <div className="flex  pb-4 pt-4 space-x-4">
-                <p>VS Code</p>
-                <p>Sublime Text</p>
-                <p>Atom </p>
-                <p>iTerm2 </p>
-                <p> Hyper</p>
-              </div>
-              <div className=" flex text-2xl  space-x-4">
-                <div>
-                  <TbBrandGithub />
-                </div>
-                <div>
-                  <RiShareBoxLine />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* -------------------------image 3 --------------------- */}
-
-          <div className=" w-[630px] absolute ml-[550px]  text-right space-y-1 rounded-md pb-4">
-            <p className="text-emerald-400">Featured Project</p>
-            <h1 className="text-xl ">Build a Spotify Connected App</h1>
-          </div>
-          <div className="flex">
-            <div>
               <Image
-                className="w-18 h-96  rounded-md"
-                src={three}
-                alt="three"
+                src={tn_phil}
+                alt="ticketnation"
+                className="w-full h-full rounded-md"
               />
             </div>
 
-            <div className=" bg-slate-800 w-[630px] absolute pt-8 pb-8 pr-8 mt-24 ml-[550px] text-right space-y-1 rounded-md">
-              <div>
-                <p>Having struggled with understanding how the Spotify OAuth</p>
-                <p>flow works, I made the course I wish I could have had.</p>
-                <p className="pt-2">
-                  Unlike tutorials that only cover a few concepts and leave you
-                </p>
-                <p>with half-baked GitHub repositories, this course covers</p>
-              </div>
-
-              <div className=" w-[630px] absolute  pt-16  pb-12 rounded-md ">
-                <div className="flex justify-end space-x-4">
-                  <p>React Express</p>
-                  <p>Spotify</p>
-                  <p>API</p>
-                  <p> Styled </p>
-                  <p>Components</p>
+            <div className="col-span-12 md:col-span-6 md:z-10  absolute md:static  w-full py-4 md:py-0 px-6 md:px-0  rounded-md bg-[#233554]/80 md:bg-transparent h-full  md:-translate-x-6 flex flex-col justify-between">
+              <div className="flex md:justify-end">
+                <div className="flex-col md:text-right space-y-4">
+                  <div className="text-[#64ffda]">Featured Project</div>
+                  <a
+                    href="https://www.ticketnation.ph/"
+                    className="text-xl font-semibold hover:text-[#64ffda]"
+                  >
+                    Ticketnation Philippines
+                  </a>
                 </div>
-                <div className="text-xl flex justify-end ">
-                  <h1 className="border w-36 text-center rounded-md p-2 mt-8 text-[#64ffda] border-[#64ffda]">
-                    Learn More
-                  </h1>
+              </div>
+              <div className="md:bg-[#112240] flex md:justify-end py-8 md:pr-6 rounded-md md:text-right md:px-6 text-lg text-[#a8b2d1]">
+                <p>
+                  Ticketnation Philippines, powered by Altev, redefines
+                  e-ticketing. With a focus on innovation and reliability, we
+                  elevate businesses to new heights. Since 2020, we have been
+                  the preferred technology partner for major corporations,
+                  revolutionizing the industry.
+                </p>
+              </div>
+              <div className="flex md:justify-end">
+                <div className="flex gap-4">
+                  <div className="hover:text-[#64ffda] text-2xl">
+                    <TbBrandGithub />
+                  </div>
+
+                  <div className="hover:text-[#64ffda] text-2xl">
+                    <RiShareBoxLine />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* --------2-- */}
+          <div className="relative w-full   text-white grid grid-cols-12 rounded-md  ">
+            <div className="col-span-12 md:col-span-6 md:z-10 z-10 absolute md:static py-4 md:py-0 px-6 md:px-0  rounded-md  transform md:translate-x-6 w-full bg-[#233554]/80 md:bg-transparent  h-full flex flex-col justify-between">
+              <div className="flex justify-start">
+                <div className="flex-col space-y-4">
+                  <div className="text-[#64ffda]">Featured Project</div>
+                  <a
+                    href="https://altev.tech/"
+                    className="text-xl font-semibold hover:text-[#64ffda]"
+                  >
+                    Altev Technologies
+                  </a>
+                </div>
+              </div>
+              <div className="md:bg-[#112240]  flex justify-start py-8 md:pl-6 rounded-md md:px-6 text-lg text-[#a8b2d1]">
+                <p>
+                  Altev, a development company from Central Luzon, started in
+                  2020 as a home-grown venture. It offers reliable technology
+                  partnerships, prioritizing quality and efficiency. Altev has
+                  become a preferred innovation partner for major corporations,
+                  leveraging technology to propel clients' businesses forward.
+                </p>
+              </div>
+              <div className="flex justify-start">
+                <div className="flex gap-4">
+                  <div className="hover:text-[#64ffda] text-2xl">
+                    <TbBrandGithub />
+                  </div>
+
+                  <div className="hover:text-[#64ffda] text-2xl">
+                    <RiShareBoxLine />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-span-12 md:col-span-6 md:z-0   md:-translate-x-6 md:h-[20em] h-[25em] border-[#64ffda] md:border rounded-md hover:border-0 ">
+              <a
+                href="https://altev.tech/"
+                className=" absolute  w-full h-full rounded-md bg-[#64ffda]/70 md:bg-[#64ffda]/50  hover:bg-transparent transition-colors duration-300"
+              ></a>
+              <Image
+                src={altev}
+                alt="one"
+                className="w-full h-full rounded-md"
+              />
+            </div>
+          </div>
+          {/* ----3-------- */}
+          <div className="relative w-full   text-white grid grid-cols-12 rounded-md   ">
+            <div className="col-span-12 md:col-span-6 md:z-0  md:translate-x-6 md:h-[20em] h-[25em]  rounded-md  ">
+              <a
+                href="https://www.clarencecabiles.com/"
+                className="absolute  rounded-md w-full h-full bg-[#64ffda]/70 md:bg-[#64ffda]/50 hover:bg-transparent transition-colors duration-300"
+              ></a>
+
+              <Image
+                src={three}
+                alt="test"
+                className="w-full h-full rounded-md"
+              />
+            </div>
+
+            <div className="col-span-12 md:col-span-6 md:z-10  absolute md:static  w-full py-4 md:py-0 px-6 md:px-0  rounded-md bg-[#233554]/80 md:bg-transparent h-full  md:-translate-x-6 flex flex-col justify-between">
+              <div className="flex md:justify-end">
+                <div className="flex-col md:text-right space-y-4">
+                  <div className="text-[#64ffda]">Featured Project</div>
+                  <a
+                    href="https://www.clarencecabiles.com/"
+                    className="text-xl font-semibold hover:text-[#64ffda]"
+                  >
+                    Lorem Ipsum
+                  </a>
+                </div>
+              </div>
+              <div className="md:bg-[#112240] flex md:justify-end py-8 md:pr-6 rounded-md md:text-right md:px-6 text-lg text-[#a8b2d1]">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad ,minim veniam building accessible, human-centered
+                  products
+                </p>
+              </div>
+              <div className="flex md:justify-end">
+                <div className="flex gap-4">
+                  <div className="hover:text-[#64ffda] text-2xl">
+                    <TbBrandGithub />
+                  </div>
+
+                  <div className="hover:text-[#64ffda] text-2xl">
+                    <RiShareBoxLine />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

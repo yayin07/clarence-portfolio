@@ -62,6 +62,10 @@ const AboutCard = () => {
                 </div>
                 <div className="flex">
                   <FaCaretRight className=" text-[#64ffda] mt-1" />
+                  <p> Daisy UI</p>
+                </div>
+                <div className="flex">
+                  <FaCaretRight className=" text-[#64ffda] mt-1" />
                   <p> CSS</p>
                 </div>
               </div>
@@ -86,6 +90,10 @@ const AboutCard = () => {
                 <div className="flex">
                   <FaCaretRight className=" text-[#64ffda] mt-1" />
                   <h1>Next JS</h1>
+                </div>
+                <div className="flex">
+                  <FaCaretRight className=" text-[#64ffda] mt-1" />
+                  <h1>Headless UI</h1>
                 </div>
               </div>
             </div>
