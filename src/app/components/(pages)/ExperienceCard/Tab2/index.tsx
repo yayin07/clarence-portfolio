@@ -10,7 +10,7 @@ const Tab2 = () => {
             Front-End Developer
             <a className="text-[#64ffda] pl-2">@ Altev Tech.</a>
           </h2>
-          <p className="text-sm">June 2021 - July 2022</p>
+          <p className="text-sm">Aug 2020 - July 2022</p>
         </div>
         <div className="flex flex-col space-y-2">
           <div className="flex">
