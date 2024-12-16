@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { FaCaretRight } from "react-icons/fa";
 import DP from "../../../../../public/yayin.jpg";
+import Link from "next/link";
 
 const AboutCard = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleContent = () => {
+    setIsExpanded(!isExpanded);
+  };
   return (
     <div>
       <div className="bg-[#0a192f] py-20 m-auto max-w-[1200px] " id="about">
@@ -20,80 +26,120 @@ const AboutCard = () => {
         <div className="px-12 py-12 md:px-20 lg:px-52 flex flex-col lg:flex-row  gap-6 ">
           <div className="w-full text-md text-[#a8b2d1]">
             <div>
-              <p>
-                Hello! I'm Clarence, a mid-level developer with a focus on
-                creating impactful web solutions. I excel in crafting
-                exceptional user experiences, from responsive designs to
-                seamless interactions. Let's collaborate and build engaging
-                websites together.
-                <a className="text-[#64ffda] pl-2">Upstatement</a>.
-              </p>
-              <br></br>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              </p>
-              <p>
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam,
-              </p>
-              <p>
-                building accessible, human-centered products at
-                <a className="text-[#64ffda] pl-2">Upstatement</a>.
-              </p>
-            </div>
-
-            <div className="w-full grid grid-cols-2 gap-4 pt-6 ">
               <div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <p> JavaScript (ES6+)</p>
+                <div
+                  className={`overflow-hidden ${
+                    isExpanded ? "" : "line-clamp-4"
+                  } transition-all duration-300`}
+                >
+                  Hello! I'm Clarence, a Software Developer with extensive
+                  experience in both mobile and web development. Proficient in
+                  React Native, and Next.js, I excel in creating dynamic,
+                  user-friendly applications. I am well-versed in Agile
+                  methodologies, ensuring efficient and collaborative workflows.
+                  My experience spans beyond working in startup environments,
+                  where I have honed my ability to deliver high-quality
+                  solutions in fast-paced settings.
                 </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <p> React JS</p>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <h1>Node JS</h1>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <p> TypeScript </p>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <p> Daisy UI</p>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <p> CSS</p>
-                </div>
+
+                <button
+                  className="text-[#64ffda]  cursor-pointer hover:underline"
+                  onClick={toggleContent}
+                >
+                  {isExpanded ? "See Less" : "See More"}
+                </button>
               </div>
 
-              <div className=" ">
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <h1>AWS</h1>
+              <br></br>
+
+              <div>
+                Let's collaborate and build engaging websites and mobile apps
+                together.
+                <Link
+                  href="https://www.linkedin.com/in/clarence-cabiles-028bb4284/"
+                  target="_blank"
+                  className="text-[#64ffda] pl-2"
+                >
+                  Connect with me
+                </Link>
+              </div>
+            </div>
+
+            <div className="pt-6 space-y-3">
+              <div className="text-[#64ffda]  text-[20px]"> Tech Stacks</div>
+              <div className="w-full grid grid-cols-2 gap-4  ">
+                <div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <p>JavaScript (ES6+)</p>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <p>React JS</p>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Node JS</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Postman</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Prisma</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Nest JS</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <p>TypeScript </p>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <p>Agile</p>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>React Native</h1>
+                  </div>
                 </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <h1>Html</h1>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <h1>Tailwindcss</h1>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <h1>Git</h1>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <h1>Next JS</h1>
-                </div>
-                <div className="flex">
-                  <FaCaretRight className=" text-[#64ffda] mt-1" />
-                  <h1>Headless UI</h1>
+
+                <div className=" ">
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>AWS</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Tailwindcss</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Next JS</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>ShadCN</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Git</h1>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <p>MoEngage</p>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <p>CSS</p>
+                  </div>
+                  <div className="flex">
+                    <FaCaretRight className=" text-[#64ffda] mt-1" />
+                    <h1>Html</h1>
+                  </div>
                 </div>
               </div>
             </div>

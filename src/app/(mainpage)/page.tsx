@@ -8,6 +8,7 @@ import ContactCard from "../components/(pages)/ContactCard";
 import OtherCard from "../components/(pages)/Others";
 import WorkCard from "../components/(pages)/WorkCard";
 import Footer from "../components/commons/Footer";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -24,35 +25,40 @@ const Home = () => {
             </div>
 
             <h1 className=" md:text-6xl text-[#a8b2d1] text-4xl  mt-4">
-              I forge web realms that inspire imagination
+              I forge digital realms that inspire imagination
             </h1>
 
             <div className="md:mt-12 text-[#a8b2d1] md:text-xl  mt-4 ">
               <p>
-                I am a versatile software engineer with expertise in frontend
-                development.
+                I am a versatile software engineer with expertise in Mobile and
+                Web development.
               </p>
               <p>
                 With a passion for crafting clean and efficient code, I
                 specialize in creating
               </p>
               <p>
-                seamless user interfaces and engaging web experiences.
-                <a className="text-[#64ffda] pl-2"> Upstatement.</a>.
+                seamless user interfaces and engaging mobile & web experiences.
+                {/* <a className="text-[#64ffda] pl-2"> Upstatement.</a>.s */}
               </p>
             </div>
 
             <div className=" md:pt-0 flex justify-start my-16">
-              <div className="rounded-md  border-[#64ffda] border-r-2 border-b-2   ">
-                <div
-                  className="p-4 hover:-translate-y-1 hover:-translate-x-1 rounded-md text-[#64ffda] border
+              <Link
+                href="https://medium.com/@clarencecabiles07"
+                target="_blank"
+              >
+                <div className="rounded-md  border-[#64ffda] border-r-2 border-b-2   ">
+                  <div
+                    className="p-4 hover:-translate-y-1 hover:-translate-x-1 rounded-md text-[#64ffda] border
                    border-[#64ffda] 
                      translate-all "
-                  style={{ transition: "transform 0.3s" }}
-                >
-                  Check out my course!
+                    style={{ transition: "transform 0.3s" }}
+                  >
+                    Check out my course!
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

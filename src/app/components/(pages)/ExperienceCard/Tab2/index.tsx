@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 
@@ -8,7 +9,13 @@ const Tab2 = () => {
         <div>
           <h2 className="text-xl font-semibold text-[#ccd6f6]">
             Front-End Developer
-            <a className="text-[#64ffda] pl-2">@ Altev Tech.</a>
+            <Link
+              href="https://www.altev.tech/"
+              target="_blank"
+              className="text-[#64ffda] pl-2"
+            >
+              @ Altev Technologies
+            </Link>
           </h2>
           <p className="text-sm">Aug 2020 - July 2022</p>
         </div>

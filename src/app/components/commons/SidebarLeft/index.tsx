@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import {
   TbBrandGithub,
@@ -7,6 +8,7 @@ import {
   TbBrandLinkedin,
   TbBrandFacebook,
 } from "react-icons/tb";
+import { AiOutlineMedium } from "react-icons/ai";
 
 const SidebarLeft = () => {
   return (
@@ -20,20 +22,33 @@ const SidebarLeft = () => {
               </a>
             </div>
             <div className="hover:text-[#64ffda]">
-              <TbBrandInstagram />
+              <Link target="_blank" href="/">
+                <TbBrandInstagram />
+              </Link>
             </div>
             <div className="hover:text-[#64ffda]">
-              <a>
-                <TbBrandTwitter />
-              </a>
+              <Link
+                target="_blank"
+                href="https://medium.com/@clarencecabiles07"
+              >
+                <AiOutlineMedium />
+              </Link>
             </div>
             <div className="hover:text-[#64ffda]">
-              <TbBrandLinkedin />
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/clarence-cabiles-028bb4284/"
+              >
+                <TbBrandLinkedin />
+              </Link>
             </div>
             <div className="hover:text-[#64ffda]">
-              <a href="https://www.facebook.com/cabiles.clarence">
+              <Link
+                target="_blank"
+                href="https://www.facebook.com/cabiles.clarence"
+              >
                 <TbBrandFacebook />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -19,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[#0a192f]">
         <Header />
-        <div className="flex min-w-screen mx-auto min-h-screen">
+        <div className="flex min-w-screen min-h-screen max-w-[1866px] mx-auto">
           <SidebarLeft />
           <div className="flex-1">{children}</div>
           <SidebarRight />

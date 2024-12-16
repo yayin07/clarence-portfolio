@@ -4,7 +4,7 @@ import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
 
 const ExperienceCard = () => {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState("tab3");
 
   const openTab = (tabName: string) => {
     setActiveTab(tabName);
@@ -29,34 +29,36 @@ const ExperienceCard = () => {
         <div className="flex flex-col md:flex-row py-12 ">
           <div className="flex flex-row md:flex-col justify-center md:justify-start ">
             <button
-              className={`px-4 py-2 rounded-l md:rounded-none hover:bg-[#ccd6f6]/10 text-left ${
-                activeTab === "tab1"
-                  ? "bg-[#ccd6f6]/10 text-[#64ffda] border-[#64ffda] border-b-2 md:border-b-0 md:border-l-2"
-                  : "text-[#a8b2d1] border-[#233554] border-b-2 md:border-b-0 md:border-l-2"
-              }`}
-              onClick={() => openTab("tab1")}
-            >
-              Ticketnation.ph
-            </button>
-            <button
-              className={`px-4 py-2 hover:bg-[#ccd6f6]/10 text-left ${
-                activeTab === "tab2"
-                  ? "bg-[#ccd6f6]/10 text-[#64ffda] border-[#64ffda] border-b-2 md:border-b-0 md:border-l-2"
-                  : "text-[#a8b2d1] border-[#233554] border-b-2 md:border-b-0 md:border-l-2 "
-              }`}
-              onClick={() => openTab("tab2")}
-            >
-              Altev.tech
-            </button>
-            <button
-              className={`px-4 py-2 rounded-r md:rounded-none hover:bg-[#ccd6f6]/10 text-left  ${
+              className={`px-4 py-2 rounded-l md:rounded-none hover:bg-[#ccd6f6]/10 w-1/3 md:w-full text-center md:text-left ${
                 activeTab === "tab3"
-                  ? "bg-[#ccd6f6]/10  text-[#64ffda] border-[#64ffda] border-b-2 md:border-b-0 md:border-l-2"
+                  ? "bg-[#ccd6f6]/10 text-[#64ffda] border-[#64ffda] border-b-2 md:border-b-0 md:border-l-2"
                   : "text-[#a8b2d1] border-[#233554] border-b-2 md:border-b-0 md:border-l-2"
               }`}
               onClick={() => openTab("tab3")}
             >
-              Lorem Ipsum
+              Toki
+            </button>
+
+            <button
+              className={`px-4 py-2 hover:bg-[#ccd6f6]/10 w-1/3 md:w-full text-center md:text-left  ${
+                activeTab === "tab1"
+                  ? "bg-[#ccd6f6]/10 text-[#64ffda] border-[#64ffda] border-b-2 md:border-b-0 md:border-l-2"
+                  : "text-[#a8b2d1] border-[#233554] border-b-2 md:border-b-0 md:border-l-2 "
+              }`}
+              onClick={() => openTab("tab1")}
+            >
+              Ticketnation
+            </button>
+
+            <button
+              className={`px-4 py-2 rounded-r md:rounded-none hover:bg-[#ccd6f6]/10 w-1/3 md:w-full text-center md:text-left ${
+                activeTab === "tab2"
+                  ? "bg-[#ccd6f6]/10  text-[#64ffda] border-[#64ffda] border-b-2 md:border-b-0 md:border-l-2"
+                  : "text-[#a8b2d1] border-[#233554] border-b-2 md:border-b-0 md:border-l-2"
+              }`}
+              onClick={() => openTab("tab2")}
+            >
+              Altev Tech
             </button>
           </div>
 

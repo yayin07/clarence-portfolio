@@ -2,12 +2,13 @@ import React from "react";
 import Image from "next/image";
 import one from "../../../../../public/one.png";
 
-import three from "../../../../../public/three.png";
+import toki from "../../../../../public/toki.png";
 import altev from "../../../../../public/altev.png";
 import tn_phil from "../../../../../public/tn_phil.png";
 
 import { TbBrandGithub } from "react-icons/tb";
 import { RiShareBoxLine } from "react-icons/ri";
+import Link from "next/link";
 
 const WorkCard = () => {
   return (
@@ -30,14 +31,15 @@ const WorkCard = () => {
         <div className="flex flex-col gap-16">
           <div className="relative w-full   text-white grid grid-cols-12 rounded-md   ">
             <div className="col-span-12 md:col-span-6 md:z-0  md:translate-x-6 md:h-[20em] h-[25em] border-[#64ffda] md:border rounded-md hover:border-0  ">
-              <a
-                href="https://www.ticketnation.ph/"
+              <Link
+                target="_blank"
+                href="https://www.tokiasia.com/"
                 className="absolute  rounded-md w-full h-full bg-[#64ffda]/70 md:bg-[#64ffda]/50 hover:bg-transparent transition-colors duration-300"
-              ></a>
+              ></Link>
 
               <Image
-                src={tn_phil}
-                alt="ticketnation"
+                src={toki}
+                alt="toki"
                 className="w-full h-full rounded-md"
               />
             </div>
@@ -46,21 +48,20 @@ const WorkCard = () => {
               <div className="flex md:justify-end">
                 <div className="flex-col md:text-right space-y-4">
                   <div className="text-[#64ffda]">Featured Project</div>
-                  <a
-                    href="https://www.ticketnation.ph/"
+                  <Link
+                    target="_blank"
+                    href="https://www.tokiasia.com/"
                     className="text-xl font-semibold hover:text-[#64ffda]"
                   >
-                    Ticketnation Philippines
-                  </a>
+                    Toki Asia
+                  </Link>
                 </div>
               </div>
               <div className="md:bg-[#112240] flex md:justify-end py-8 md:pr-6 rounded-md md:text-right md:px-6 text-lg text-[#a8b2d1]">
                 <p>
-                  Ticketnation Philippines, powered by Altev, redefines
-                  e-ticketing. With a focus on innovation and reliability, we
-                  elevate businesses to new heights. Since 2020, we have been
-                  the preferred technology partner for major corporations,
-                  revolutionizing the industry.
+                  Toki is an e-commerce platform specializing in exclusive
+                  collectible items, including Toys, LEGO sets, Funko Pops,
+                  Sports Cards, and Sneakers.
                 </p>
               </div>
               <div className="flex md:justify-end">
@@ -82,21 +83,21 @@ const WorkCard = () => {
               <div className="flex justify-start">
                 <div className="flex-col space-y-4">
                   <div className="text-[#64ffda]">Featured Project</div>
-                  <a
-                    href="https://altev.tech/"
+                  <Link
+                    target="_blank"
+                    href="https://www.ticketnation.ph/"
                     className="text-xl font-semibold hover:text-[#64ffda]"
                   >
-                    Altev Technologies
-                  </a>
+                    Ticketnation Philippines
+                  </Link>
                 </div>
               </div>
               <div className="md:bg-[#112240]  flex justify-start py-8 md:pl-6 rounded-md md:px-6 text-lg text-[#a8b2d1]">
                 <p>
-                  Altev, a development company from Central Luzon, started in
-                  2020 as a home-grown venture. It offers reliable technology
-                  partnerships, prioritizing quality and efficiency. Altev has
-                  become a preferred innovation partner for major corporations,
-                  leveraging technology to propel clients' businesses forward.
+                  Ticketnation PH is a ticketing platform based in the
+                  Philippines. it provide seamless access to tickets for a
+                  variety of events, ensuring a smooth and enjoyable experience
+                  for all our users.
                 </p>
               </div>
               <div className="flex justify-start">
@@ -113,28 +114,31 @@ const WorkCard = () => {
             </div>
 
             <div className="col-span-12 md:col-span-6 md:z-0   md:-translate-x-6 md:h-[20em] h-[25em] border-[#64ffda] md:border rounded-md hover:border-0 ">
-              <a
-                href="https://altev.tech/"
+              <Link
+                target="_blank"
+                href="https://www.ticketnation.ph/"
                 className=" absolute  w-full h-full rounded-md bg-[#64ffda]/70 md:bg-[#64ffda]/50  hover:bg-transparent transition-colors duration-300"
-              ></a>
+              />
+
               <Image
-                src={altev}
-                alt="one"
+                src={tn_phil}
+                alt="ticketnation"
                 className="w-full h-full rounded-md"
               />
             </div>
           </div>
+
           {/* ----3-------- */}
           <div className="relative w-full   text-white grid grid-cols-12 rounded-md   ">
             <div className="col-span-12 md:col-span-6 md:z-0  md:translate-x-6 md:h-[20em] h-[25em]  rounded-md  ">
-              <a
-                href="https://www.clarencecabiles.com/"
+              <Link
+                target="_blank"
+                href="https://altev.tech/"
                 className="absolute  rounded-md w-full h-full bg-[#64ffda]/70 md:bg-[#64ffda]/50 hover:bg-transparent transition-colors duration-300"
-              ></a>
-
+              />
               <Image
-                src={three}
-                alt="test"
+                src={altev}
+                alt="one"
                 className="w-full h-full rounded-md"
               />
             </div>
@@ -143,20 +147,22 @@ const WorkCard = () => {
               <div className="flex md:justify-end">
                 <div className="flex-col md:text-right space-y-4">
                   <div className="text-[#64ffda]">Featured Project</div>
-                  <a
-                    href="https://www.clarencecabiles.com/"
+                  <Link
+                    target="_blank"
+                    href="https://altev.tech/"
                     className="text-xl font-semibold hover:text-[#64ffda]"
                   >
-                    Lorem Ipsum
-                  </a>
+                    Altev Technologies
+                  </Link>
                 </div>
               </div>
+
               <div className="md:bg-[#112240] flex md:justify-end py-8 md:pr-6 rounded-md md:text-right md:px-6 text-lg text-[#a8b2d1]">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad ,minim veniam building accessible, human-centered
-                  products
+                  Altev Tech is a software development outsourcing company,
+                  offering reliable tech partnerships focused on quality and
+                  efficiency. We help major corporations leverage technology to
+                  drive business growth.
                 </p>
               </div>
               <div className="flex md:justify-end">
