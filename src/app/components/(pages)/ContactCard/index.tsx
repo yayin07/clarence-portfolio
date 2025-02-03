@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ContactCard = () => {
@@ -12,14 +13,18 @@ const ContactCard = () => {
           <div className="text-3xl font-semibold md:text-4xl md:font-extrabold  text-[#ccd6f6] py-6">
             <h1>Get In Touch</h1>
           </div>
-          <p>I’m currently looking for any new opportunities, my Email is</p>
           <p>
-            always open. Whether you have a question or just want to say hi,
-            I’ll try my
+            I'm always open to new opportunities! Feel free to drop me an email,
           </p>
-          <p>best to get back to you!</p>
+          <p>whether you have a question or just want to connect</p>
+          <p>I'll do my best to reply promptly.</p>
 
-          <div className=" md:pt-0 flex  justify-center my-16">
+          <Link
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=clarencecabiles07@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" md:pt-0 flex  justify-center my-16"
+          >
             <div className="rounded-md border-[#64ffda] border-r-2 border-b-2   ">
               <div
                 className="px-8 p-4  hover:-translate-y-1 hover:-translate-x-1 rounded-md text-[#64ffda] border
@@ -30,7 +35,7 @@ const ContactCard = () => {
                 Say Hello
               </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="pt-48  pb-4 space-y-3 hidden lg:flex justify-center text-lg  ">
           <div>

@@ -17,7 +17,7 @@ const SidebarLeft = () => {
         <div className="text-2xl">
           <div className="space-y-6">
             <div className="hover:text-[#64ffda]">
-              <a href="https://github.com/yayin07">
+              <a href="https://github.com/yayin07" target="_blank">
                 <TbBrandGithub />
               </a>
             </div>

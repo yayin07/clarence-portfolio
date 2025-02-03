@@ -36,7 +36,7 @@ const OtherCard = () => {
 
               <div>
                 <h1 className="text-2xl pt-4 text-[#ccd6f6] hover:text-[#64ffda]">
-                  The standard Lorem Ipsum passage
+                  I am Mike Swift
                 </h1>
                 <p className="py-4 text-lg">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -71,7 +71,7 @@ const OtherCard = () => {
 
               <div>
                 <h1 className="text-2xl pt-4 text-[#ccd6f6] hover:text-[#64ffda]">
-                  The standard Lorem Ipsum passage
+                  Gratchis Getaway
                 </h1>
                 <p className="py-4 text-lg">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -80,7 +80,7 @@ const OtherCard = () => {
                 </p>
                 <div>
                   <p className=" text-sm text-[#8892b0]">
-                    Next.js Tailwindcss GitHub
+                    Next.js Tailwindcss GitHub Contenful CMS
                   </p>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const OtherCard = () => {
 
               <div>
                 <h1 className="text-2xl pt-4 text-[#ccd6f6]  hover:text-[#64ffda]">
-                  The standard Lorem Ipsum passage
+                  Clippy
                 </h1>
                 <p className="py-4 text-lg">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -141,7 +141,7 @@ const OtherCard = () => {
 
               <div>
                 <h1 className="text-2xl pt-4 text-[#ccd6f6] hover:text-[#64ffda]">
-                  The standard Lorem Ipsum passage
+                  Insta Fit
                 </h1>
                 <p className="py-4 text-lg">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -175,7 +175,7 @@ const OtherCard = () => {
 
               <div>
                 <h1 className="text-2xl pt-4 text-[#ccd6f6] hover:text-[#64ffda]">
-                  The standard Lorem Ipsum passage
+                  Summer Madness
                 </h1>
                 <p className="py-4 text-lg">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -209,7 +209,7 @@ const OtherCard = () => {
               <div className="flex flex-col ">
                 <div>
                   <h1 className="text-2xl pt-4 text-[#ccd6f6] hover:text-[#64ffda]">
-                    The standard Lorem Ipsum passage
+                    Toki Connect
                   </h1>
                 </div>
                 <div>
@@ -220,7 +220,7 @@ const OtherCard = () => {
 
                 <div>
                   <p className="text-sm text-[#8892b0]">
-                    Next.js Tailwindcss GitHub
+                    React Native Expo Tailwindcss AWS
                   </p>
                 </div>
               </div>
